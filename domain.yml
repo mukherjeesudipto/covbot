@@ -1,0 +1,102 @@
+intents:
+- goodbye:
+    triggers: utter_goodbye
+- inform_stats
+- greet:
+    triggers: utter_greet
+- inform_news
+- inform_category
+- inform_location
+- mood_unhappy
+- inform_zone
+- affirm
+- inform_self:
+    triggers: utter_self
+- out_of_scope
+- bot_challenge:
+    triggers: utter_iamabot
+- inform_country
+- deny
+- mood_great
+entities:
+- category
+- country
+- location
+slots:
+  category:
+    type: text
+  country:
+    type: text
+  location:
+    type: text
+templates:
+  utter_ask_category:
+  - text: "Sure! You can select from the below categories.\n1. health\n2. technology\n\
+      3. business\n4. sports\n5. science\n6. general\n7. entertainment\n\n"
+  utter_ask_country:
+  - text: In which country?
+  - text: Please help me by giving the country name which you are seeking the stats
+      for.
+  - text: For which country?
+  - text: Sure! Which country do you want to know the stats for.
+  - text: I can help you with that. Tell me the country name and I'll give you the
+      details.
+  utter_ask_location:
+  - text: In which location?
+  - text: Please help me by giving the location name which you are seeking the zone
+      for.
+  - text: For which location?
+  - text: Sure! Which location do you want to know the zone for.
+  - text: I can help you with that. Tell me the location name and I'll give you the
+      zone.
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_default:
+  - text: Sorry! I didn't understand that.
+  - text: Sorry! Seems like I did not understand you.
+  - text: I can't help you with that. I am sorry!
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye :(
+  - text: Glad I could be of help. Bye.
+  - text: Bye Bye!
+  - text: Bother me anytime you want. Bye for now!
+  utter_greet:
+  - text: "Hi. I am CovBot. I can help you with\n1. COVID-19 stats of different countries\
+      \ from all around the world.\n2. Getting to know if an area lies in the red,\
+      \ orange or green zone as per the guidelines published by the Govt. of India.\n\
+      3. Getting latest news from various sources. Please let me know how can I help\
+      \ you.\n\n"
+  utter_happy:
+  - text: Great, carry on!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  - text: I am your personal assistant.
+  - text: I am a lot of things. But right now, I am your assistant.
+  - text: I was made by a guy in a dodgy environment.
+  - text: I am a product of boredom and willingness to learn.
+  utter_self:
+  - text: My capabilities are limitless. But as of now I am restricted to simple operations
+      like providing useful information
+  - text: "I can basically help you with\n1. COVID-19 stats of different countries\
+      \ from all around the world.\n2. Getting to know if an area lies in the red,\
+      \ orange or green zone as per the\n   guidelines published by the Govt. of India.\n\
+      3. Getting latest news from various sources. Please let me know how can I help\
+      \ you.\n"
+actions:
+- action_GetContainment
+- action_getData
+- action_getLatestnews
+- utter_ask_category
+- utter_ask_country
+- utter_ask_location
+- utter_cheer_up
+- utter_default
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_iamabot
+- utter_self
