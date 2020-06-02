@@ -1,27 +1,44 @@
+%YAML 1.1
+---
+actions:
+- action_GetContainment
+- action_getData
+- action_getLatestnews
+- utter_ask_category
+- utter_ask_country
+- utter_ask_location
+- utter_cheer_up
+- utter_default
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_iamabot
+- utter_self
+entities:
+- category
+- country
+- location
 intents:
-- goodbye:
-    triggers: utter_goodbye
-- inform_stats
-- greet:
-    triggers: utter_greet
+- inform_country
 - inform_news
 - inform_category
 - inform_location
 - mood_unhappy
 - inform_zone
+- goodbye:
+    triggers: utter_goodbye
+- inform_stats
+- greet:
+    triggers: utter_greet
 - affirm
 - inform_self:
     triggers: utter_self
 - out_of_scope
 - bot_challenge:
     triggers: utter_iamabot
-- inform_country
 - deny
 - mood_great
-entities:
-- category
-- country
-- location
 slots:
   category:
     type: text
@@ -85,18 +102,3 @@ templates:
       \ orange or green zone as per the\n   guidelines published by the Govt. of India.\n\
       3. Getting latest news from various sources. Please let me know how can I help\
       \ you.\n"
-actions:
-- action_GetContainment
-- action_getData
-- action_getLatestnews
-- utter_ask_category
-- utter_ask_country
-- utter_ask_location
-- utter_cheer_up
-- utter_default
-- utter_did_that_help
-- utter_goodbye
-- utter_greet
-- utter_happy
-- utter_iamabot
-- utter_self

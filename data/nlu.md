@@ -38,6 +38,7 @@
 - thank you. bye
 - alright then. thank you. bye.
 - all right then. thank you.
+- alright then. bye.
 
 ## intent:greet
 - Hello
@@ -47,6 +48,7 @@
 - hi
 - hi there!
 - hi there
+- hello
 - hello
 - hello
 - hello
@@ -62,6 +64,7 @@
 - [health](category)
 - [technology](category)
 - [general](category)
+- tell me something on [science](category)
 
 ## intent:inform_country
 - [Spain](country)
@@ -87,6 +90,7 @@
 - [Mongolia](country)
 - [Uganda](country)
 - [China](country)
+- and [canada](country)
 
 ## intent:inform_location
 - [Bangalore](location)
@@ -109,8 +113,9 @@
 - [Ville Parle](location)
 - [Gandhi Nagar](location)
 - [JP Nagar](location)
-- in [Bangalore](location)
+- [Bangalore](location)
 - [Immadihalli](location)
+- in [bangalore](location)
 
 ## intent:inform_news
 - Get me some latest news.
@@ -127,6 +132,8 @@
 - get me latest news
 - get me some more news
 - get me latest news on [science](category)
+- alright then. get me some latest news now.
+- [entertainment](category)
 
 ## intent:inform_self
 - What can you do
@@ -155,6 +162,14 @@
 - In [bangladesh](country)
 - how is the covid situation in [Bangladesh](country) like?
 - how is the covid situation in [Germany](country)?
+- what about [Russia](country)
+- how about [India](country)
+- And [Spain](country)
+- covid situation in [china](country)
+- covid scenario in [japan](country)
+- i would like to know about the covid scenario
+- in [ireland](country)
+- what about [england](country)
 
 ## intent:inform_zone
 - [Bangalore](location) zone
@@ -169,9 +184,11 @@
 - [Immadihalli](location) zone
 - I would like to know about the covid zone as well.
 - I would like to know about the covid zone in [Immadihalli](location)
-- Do you know the covid zone which bhubaneswar is in[](location:bhubaneswar)
+- Do you know the covid zone which [bhubaneswar](location) is in
 - nice. i would also like to know about the COVID zones in India
 - i would also like to know about the covid zones in India
+- what are the different covid zones
+- and what about [Indore](location)
 
 ## intent:mood_great
 - perfect
@@ -194,6 +211,7 @@
 - not very good
 - extremely sad
 - so sad
+- i am sad
 - i am sad
 
 ## intent:out_of_scope

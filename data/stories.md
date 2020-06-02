@@ -242,3 +242,42 @@
     - action_getData
 * goodbye
     - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* inform_stats
+    - utter_ask_country
+* inform_stats{"country": "ireland"}
+    - slot{"country": "ireland"}
+    - action_getData
+    - slot{"country": "IRELAND"}
+* inform_country{"country": "canada"}
+    - slot{"country": "canada"}
+    - action_getData
+    - slot{"country": "CANADA"}
+* inform_stats{"country": "england"}
+    - slot{"country": "england"}
+    - action_getData
+    - slot{"country": "UK"}
+* inform_zone
+    - utter_ask_location
+* inform_location{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - action_GetContainment
+* inform_zone{"location": "Indore"}
+    - slot{"location": "Indore"}
+    - action_GetContainment
+* inform_news
+    - utter_ask_category
+* inform_news{"category": "entertainment"}
+    - slot{"category": "entertainment"}
+    - action_getLatestnews
+* inform_category{"category": "science"}
+    - slot{"category": "science"}
+    - action_getLatestnews
+* mood_unhappy
+    - utter_cheer_up
+    - utter_did_that_help
+* goodbye
+    - utter_goodbye
