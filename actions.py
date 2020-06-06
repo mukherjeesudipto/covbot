@@ -4,7 +4,6 @@ import requests
 import json
 from bs4 import BeautifulSoup
 from geopy.geocoders import Nominatim
-import os
 
 # To ignore Warnings
 from warnings import simplefilter
