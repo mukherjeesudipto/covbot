@@ -281,3 +281,26 @@
     - utter_did_that_help
 * goodbye
     - utter_goodbye
+
+## New Story
+
+* inform_news
+    - utter_ask_category
+* inform_category{"category":"health"}
+    - slot{"category":"health"}
+    - action_getLatestnews
+* inform_stats{"country":"China"}
+    - slot{"country":"China"}
+    - action_getData
+    - slot{"country":"CHINA"}
+* inform_zone{"location":"bangalore"}
+    - slot{"location":"bangalore"}
+    - action_GetContainment
+* inform_news{"category":"entertainment"}
+    - slot{"category":"entertainment"}
+    - action_getLatestnews
+* inform_zone{"location":"Indore"}
+    - slot{"location":"Indore"}
+    - action_GetContainment
+* goodbye
+    - utter_goodbye
