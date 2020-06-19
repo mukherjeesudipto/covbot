@@ -170,6 +170,12 @@
 - i would like to know about the covid scenario
 - in [ireland](country)
 - what about [england](country)
+- how many people are affected in [USA](country)
+- how many people are affected in [India](country)
+- how many people are affected in [usa](country)
+- how many people are affected in [india](country)
+- how many people are affected in [Italy](country)
+- how many people are affected in [italy](country)
 
 ## intent:inform_zone
 - [Bangalore](location) zone
@@ -228,3 +234,5 @@
 - How do you know about the covid zones in India
 - how is the weather in germany?
 - frsvfrds
+- Tell me something about FItBIt
+- Share me the list of cities
